@@ -7,16 +7,17 @@ using System.Threading.Tasks;
 namespace XPortAIO
 {
     /// <summary>
-    /// Champion module info attribute for a module class.
+    /// Cross platform module info attribute for module classes.
     /// </summary>
-    internal class PortedModuleInfoAttribute : Attribute
+    internal class XPModuleInfoAttribute : Attribute
     {
         public string ChampionName { get; set; }
+        public bool IsChampionModule => !string.IsNullOrEmpty(ChampionName);
         public string ModuleName { get; set; }
         public string ModuleAuthor { get; set; }
         public PortedPlatformName PortedPlatform { get; set; }
 
-        public PortedModuleInfoAttribute(string championName, string moduleName, string author, PortedPlatformName portedPlatform)
+        public XPModuleInfoAttribute(string championName, string moduleName, string author, PortedPlatformName portedPlatform)
         {
             ChampionName = championName;
             ModuleName = moduleName;

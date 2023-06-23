@@ -18,8 +18,8 @@ using System.Threading.Tasks;
 namespace XPortAIO.Champions.Lux.KarmaPanda
 {
     //https://github.com/DamnedN00b/EloBuddy-1/blob/master/Lux/Program.cs
-    [PortedModuleInfo("Lux", moduleName:"StarBuddy - Lux", author: "KarmaPanda", PortedPlatformName.Elobuddy)]
-    internal class ModuleMain : ChampionModuleBase
+    [XPModuleInfo("Lux", moduleName:"StarBuddy - Lux", author: "KarmaPanda", PortedPlatformName.Elobuddy)]
+    internal class ModuleMain : XPModuleBase
     {
         private static SDKSpell Q = new SDKSpell(CastSlot.Q, SpellSlot.Q)
         {

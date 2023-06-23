@@ -14,8 +14,8 @@ namespace XPortAIO
 
         private static Task GameEvents_OnGameLoadComplete()
         {
-            Champions.ChampionModuleManager.LoadModules();
-            Champions.ChampionModuleManager.InitializeModules();
+            XPModuleManager.LoadModules();
+            XPModuleManager.InitializeModules();
 
             return Task.CompletedTask;
         }

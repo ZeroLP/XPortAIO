@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace XPortAIO.Champions
+namespace XPortAIO
 {
-    internal class ChampionModuleBase
+    internal class XPModuleBase
     {
+        internal bool IsChampionModule;
+
         /// <summary>
         /// Initializes the champion module.
         /// </summary>
